@@ -20,6 +20,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Jason-Jinn|Home</title>
+	  
+    <style>
+        #main{
+            min-height: 100%;
+            margin-bottom:-200px; /* 设置下边距为-200尽量不要让页脚离内容太远 */
+        }
+
+        #separate{
+            height: 200px;
+        }
+    </style>
   </head>
 
   <body>
@@ -46,6 +57,20 @@
     </nav>
     
     <h1>Home</h1>
+    
+    <div id="main">
+        <!-- 页面内容包括顶部导航栏 -->
+
+        <div id="separate"></div><!-- 可以放置main里面也可以到外面，放里面不会与页脚的边距过大 -->
+    </div>
+
+    <div id="footer">
+        <!-- 页脚内容 -->
+	 <footer>
+      	     <p>All at Jason-Jinn's blog.</p>
+             <p>There are several easter-eggs, such as the one when <a href="https://jason-jinn.github.io/404.html">404</a> occurs.</p>
+	 </footer>
+    </div>
 
     <p>Hello,world!</p>
     <p>Welcome to my <em><strong>NEW</strong></em> site here!</p>
@@ -60,7 +85,4 @@
   </body>
 </html>
 
-<footer>
-      <p>All at Jason-Jinn's blog.</p>
-      <p>There are several easter-eggs, such as the one when <a href="https://jason-jinn.github.io/404.html">404</a> occurs.</p>
-</footer>
+
