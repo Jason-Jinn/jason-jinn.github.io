@@ -48,6 +48,14 @@ p, li {
   line-height: 1.5;
 }
 
+a:link {
+  color: pink;
+}
+
+a:visited {
+  color: green;
+}
+
 /* 标题布局 */
 
 nav, article, aside, footer {
@@ -128,7 +136,7 @@ article {
 aside {
   flex: 1;
   margin-left: 10px;
-  background-color: #66ccff;
+  background-color: #000000;
 }
 
 aside li {
@@ -136,5 +144,5 @@ aside li {
 }
 
 footer {
-  margin-top: 10px;
+  margin-top: 5px;
 }
