@@ -19,110 +19,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Jason-Jinn|Home</title>
-    
-    <!-- 下方为动画样式，不懂的不要修改 -->
-
-@-webkit-keyframes flipInX {
-	0% {
-		-webkit-transform: perspective(400px) rotateX(90deg);
-		transform: perspective(400px) rotateX(90deg);
-		opacity: 0
-	}
-
-	40% {
-		-webkit-transform: perspective(400px) rotateX(-10deg);
-		transform: perspective(400px) rotateX(-10deg)
-	}
-
-	70% {
-		-webkit-transform: perspective(400px) rotateX(10deg);
-		transform: perspective(400px) rotateX(10deg)
-	}
-
-	100% {
-		-webkit-transform: perspective(400px) rotateX(0);
-		transform: perspective(400px) rotateX(0);
-		opacity: 1
-	}
-}
-
-@keyframes flipInX {
-	0% {
-		-webkit-transform: perspective(400px) rotateX(90deg);
-		-ms-transform: perspective(400px) rotateX(90deg);
-		transform: perspective(400px) rotateX(90deg);
-		opacity: 0
-	}
-
-	40% {
-		-webkit-transform: perspective(400px) rotateX(-10deg);
-		-ms-transform: perspective(400px) rotateX(-10deg);
-		transform: perspective(400px) rotateX(-10deg)
-	}
-
-	70% {
-		-webkit-transform: perspective(400px) rotateX(10deg);
-		-ms-transform: perspective(400px) rotateX(10deg);
-		transform: perspective(400px) rotateX(10deg)
-	}
-
-	100% {
-		-webkit-transform: perspective(400px) rotateX(0);
-		-ms-transform: perspective(400px) rotateX(0);
-		transform: perspective(400px) rotateX(0);
-		opacity: 1
-	}
-}
-
-@-webkit-keyframes fadeIn {
-	0% {
-		opacity: 0
-	}
-
-	100% {
-		opacity: 1
-	}
-}
-
-@keyframes fadeIn {
-	0% {
-		opacity: 0
-	}
-
-	100% {
-		opacity: 1
-	}
-}
-
-@-webkit-keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateY(-20px);
-		transform: translateY(-20px)
-	}
-
-	100% {
-		opacity: 1;
-		-webkit-transform: translateY(0);
-		transform: translateY(0)
-	}
-}
-
-@keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateY(-20px);
-		-ms-transform: translateY(-20px);
-		transform: translateY(-20px)
-	}
-
-	100% {
-		opacity: 1;
-		-webkit-transform: translateY(0);
-		-ms-transform: translateY(0);
-		transform: translateY(0)
-	}
-}
   </head>
 
   <body>
@@ -140,7 +36,8 @@
         <li><a href="articles.html">Articles</a></li>
         <li><a href="more.html">More</a></li>
       </ul>
-      <!-- 搜索栏是站点内导航的一个非线性的方式。 -->
+	    
+      <!-- 搜索栏 -->
       <form>
         <input type="search" name="q" placeholder="要搜索的内容">
         <input type="submit" value="搜索">
