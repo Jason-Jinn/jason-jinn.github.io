@@ -19,6 +19,16 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+	  
+    <!-- 点击特效 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, viewport-fit=cover">
+	<style>
+		html, body, .main{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
     <title>Jason-Jinn|主页</title>
   </head>
 	
@@ -69,4 +79,20 @@
       </footer>
     
   </body>
+  <script>
+function playColor(e){
+	console.log(e)
+	var color = new colorBall()
+	color.fly(e.clientX, e.clientY)
+}
+function toucuPlayColor(e) {
+	var color = new colorBall()
+	color.fly(e.changedTouches[0].clientX,e.changedTouches[0].clientY);
+	e.stopPropagation()
+	e.preventDefault()
+}
+var color = new colorBall()
+color.fly(document.body.clientWidth/2, document.body.clientHeight/2, 10, 300)
+</script>
+</body>
 </html>
