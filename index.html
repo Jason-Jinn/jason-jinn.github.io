@@ -13,21 +13,15 @@
     <!-- 引入看板娘 -->
     <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
     
+    <!-- 引入点击特效 -->
+    <script src="click-colorful/click-colorful.js"></script>
+	  
     <!-- 引入四级单词 
     <script src="CET4-Mouse-click-effects/cet4.js"></script>
     -->
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-	  
-    <!-- 点击特效 -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<style>
-		html, body, .main{
-			width: 100%;
-			height: 100%;
-		}
-	</style>
     <title>Jason-Jinn|主页</title>
   </head>
 	
@@ -69,30 +63,10 @@
     </ul>
 
     <p>当然，你也可以向<a href="mailto:jasonjinn@outlook.com">这个地址</a>给我发送电子邮件。</p>
-	    
-    <div class="main" ontouchstart="toucuPlayColor(event)" onclick="playColor(event)"></div>
-    <script src="click-colorful.js"></script>
    
     <footer>
       	 <p>一切都在Jason-Jinn的博客。</p>
          <p>本站还有许多彩蛋，比如说错误<a href="https://jason-jinn.github.io/404.html">404</a>发生的时候。</p>
     </footer>
-    
   </body>
-  <script>
-function playColor(e){
-	console.log(e)
-	var color = new colorBall()
-	color.fly(e.clientX, e.clientY)
-}
-function toucuPlayColor(e) {
-	var color = new colorBall()
-	color.fly(e.changedTouches[0].clientX,e.changedTouches[0].clientY);
-	e.stopPropagation()
-	e.preventDefault()
-}
-var color = new colorBall()
-color.fly(document.body.clientWidth/2, document.body.clientHeight/2, 10, 300)
-</script>
-</body>
 </html>
