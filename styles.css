@@ -7,7 +7,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 body {
@@ -136,7 +136,7 @@ article {
 aside {
   flex: 1;
   margin-left: 10px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 aside li {
