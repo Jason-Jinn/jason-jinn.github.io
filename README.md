@@ -1,1 +1,1 @@
-# jason-jinn.github.io,a Jason's personal github blog.
+# jason-jinn.github.io,a Jason Jinn's personal github blog.
