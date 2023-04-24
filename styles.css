@@ -1,4 +1,19 @@
 h1 {
+  color: royalblue;
+}
+
+ul{
+  color: gray;
+}
+
+.Articles p{
+  color: red;
+}
+
+.homepage h2{
   color: blue;
 }
 
+.homepage p{
+  color: slategray;
+}
